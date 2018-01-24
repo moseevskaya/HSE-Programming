@@ -35,7 +35,7 @@ def adj3 ():
     return random.choice(array(7))
 
 def punctuation():
-    marks = [".", "?", "!", "..."]
+    marks = [".", "?", "!", "...", " "]
     return random.choice(marks)
 
 #строки
@@ -43,13 +43,13 @@ def hokku_5_1 ():
     return verb2_1() + ' ' + art() + ' ' + noun2() + punctuation()
 
 def hokku_5_2 ():
-    return art() + ' ' + noun2() + ' ' + verb2_2()
+    return art() + ' ' + noun2() + ' ' + verb2_2() + punctuation()
 
 def hokku_7_1 ():
-    return art() + ' ' + noun3() + ' ' + adj3()
+    return art() + ' ' + noun3() + ' ' + adj3() + punctuation()
 
 def hokku_7_2 ():
-    return art() + ' ' + noun4() + ' ' + adj2()
+    return art() + ' ' + noun4() + ' ' + adj2() + punctuation()
 
 #создание
 def create_hokku_5 ():
